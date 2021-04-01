@@ -124,24 +124,39 @@ header{
   .section-two{
     display: flex;
     height: 600px;
-    background: url(/images/purlple.png)no-repeat;
+    background: url(/images/purlple.png)no-repeat purple;
     background-size: cover;
     text-align: center;
     justify-content: center;
     align-items: center;
+    transition: background-color 4s;
     article{
       display: flexbox;
       text-align: center;
       width: 100%;
+      color: purple;
     }
   }
   .section-three{
     display: flex;
     height: 600px;
-    background: url(/images/purlple-section2.png)no-repeat;
+    background: url(/images/purlple-section2.png)no-repeat purple;
     background-size: cover;
     text-align: center;
     justify-content: center;
     align-items: center;
+    transition: background-color 4s;
+    article{
+      display: flexbox;
+      text-align: center;
+      width: 100%;
+      color: purple;
+    }
+  }
+  .sections-one-two-container:hover{
+    .section-two,.section-three{
+      background-color: white;
+      transition: ease-in-out 4s;
+    }
   }
 }

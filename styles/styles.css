@@ -151,7 +151,7 @@ header nav ul li:hover ul a {
   display: -ms-flexbox;
   display: flex;
   height: 600px;
-  background: url(/images/purlple.png) no-repeat;
+  background: url(/images/purlple.png) no-repeat purple;
   background-size: cover;
   text-align: center;
   -webkit-box-pack: center;
@@ -160,12 +160,15 @@ header nav ul li:hover ul a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: background-color 4s;
+  transition: background-color 4s;
 }
 
 .page-container .section-two article {
   display: flexbox;
   text-align: center;
   width: 100%;
+  color: purple;
 }
 
 .page-container .section-three {
@@ -173,7 +176,7 @@ header nav ul li:hover ul a {
   display: -ms-flexbox;
   display: flex;
   height: 600px;
-  background: url(/images/purlple-section2.png) no-repeat;
+  background: url(/images/purlple-section2.png) no-repeat purple;
   background-size: cover;
   text-align: center;
   -webkit-box-pack: center;
@@ -182,5 +185,20 @@ header nav ul li:hover ul a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: background-color 4s;
+  transition: background-color 4s;
+}
+
+.page-container .section-three article {
+  display: flexbox;
+  text-align: center;
+  width: 100%;
+  color: purple;
+}
+
+.page-container .sections-one-two-container:hover .section-two, .page-container .sections-one-two-container:hover .section-three {
+  background-color: white;
+  -webkit-transition: ease-in-out 4s;
+  transition: ease-in-out 4s;
 }
 /*# sourceMappingURL=styles.css.map */

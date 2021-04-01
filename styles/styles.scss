@@ -1,0 +1,147 @@
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body{
+  background: url(/images/watercolor.jpg)no-repeat;
+  background-size: cover;
+}
+.nav-container{
+  width: 100vw;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  background-color:pink;
+  border-bottom: thick lightpink solid;
+}
+header{
+  height: 80px;
+  nav{
+    display: flex;
+    width: 960px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    .nav-yas{
+      display: flexbox;
+      width: 200px;
+      font-size: larger;
+    }
+    .nav-yas-ryan{
+      display: flexbox;
+      width: 200px;
+      background-color: white;
+      font-family: 'Train One', cursive;
+      font-size: 1.7em;
+      font-weight: 700;
+    }
+    .nav-ryan{
+      display: flexbox;
+      width: 200px;
+    }
+    ul{
+      li{
+        float: left;
+        width: 200px;
+        line-height: 20px;
+        ul{
+          display: none;
+        }
+        &:hover ul{
+          display: block;
+          position: absolute;
+          background-color: lightpink;
+          border: solid thick pink;
+          a{
+            font-family: 'Train One', cursive;
+            color: black;
+            font-size: larger;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+.page-container{
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  border: lightpink solid thick;
+  border-top: none;
+  background-color: whitesmoke;
+  section{
+    display: flex;
+    width: 100%;
+    height: 350px;
+    justify-content: space-between;
+    text-align: center;
+
+
+
+    .left-main{
+      display: flexbox;
+      width: 315px;
+      height: 100%;
+      h1{
+        background-color: rgb(194, 65, 194);
+        border-bottom-right-radius: 20px;
+      }
+    }
+    .middle-main{
+      display: flexbox;
+      width: 315px;
+      height: 100%;
+      font-size: larger;
+      margin-top: 50px;
+      font-family: 'Roboto', sans-serif;
+      article{
+        text-align: center;
+        line-height: 50px;
+        background-color: pink;
+        border: thick dashed lightpink;
+        border-radius: 20px;
+      }
+    }
+    .right-main{
+      display: flexbox;
+      width: 315px;
+      height: 100%;
+      h1{
+        margin-left: 50px;
+        background-color: pink;
+        border-bottom-left-radius: 20px;
+      }
+
+    }
+  }
+  .section-two{
+    display: flex;
+    height: 600px;
+    background: url(/images/purlple.png)no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    article{
+      display: flexbox;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  .section-three{
+    display: flex;
+    height: 600px;
+    background: url(/images/purlple-section2.png)no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background: url(/images/watercolor.jpg) no-repeat;
+  background-size: cover;
+}
+
+.nav-container {
+  width: 100vw;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  background-color: pink;
+  border-bottom: thick lightpink solid;
+}
+
+header {
+  height: 80px;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 960px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+header nav .nav-yas {
+  display: flexbox;
+  width: 200px;
+  font-size: larger;
+}
+
+header nav .nav-yas-ryan {
+  display: flexbox;
+  width: 200px;
+  background-color: white;
+  font-family: 'Train One', cursive;
+  font-size: 1.7em;
+  font-weight: 700;
+}
+
+header nav .nav-ryan {
+  display: flexbox;
+  width: 200px;
+}
+
+header nav ul li {
+  float: left;
+  width: 200px;
+  line-height: 20px;
+}
+
+header nav ul li ul {
+  display: none;
+}
+
+header nav ul li:hover ul {
+  display: block;
+  position: absolute;
+  background-color: lightpink;
+  border: solid thick pink;
+}
+
+header nav ul li:hover ul a {
+  font-family: 'Train One', cursive;
+  color: black;
+  font-size: larger;
+  font-weight: 700;
+}
+
+.page-container {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  border: lightpink solid thick;
+  border-top: none;
+  background-color: whitesmoke;
+}
+
+.page-container section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 350px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+.page-container section .left-main {
+  display: flexbox;
+  width: 315px;
+  height: 100%;
+}
+
+.page-container section .left-main h1 {
+  background-color: #c241c2;
+  border-bottom-right-radius: 20px;
+}
+
+.page-container section .middle-main {
+  display: flexbox;
+  width: 315px;
+  height: 100%;
+  font-size: larger;
+  margin-top: 50px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.page-container section .middle-main article {
+  text-align: center;
+  line-height: 50px;
+  background-color: pink;
+  border: thick dashed lightpink;
+  border-radius: 20px;
+}
+
+.page-container section .right-main {
+  display: flexbox;
+  width: 315px;
+  height: 100%;
+}
+
+.page-container section .right-main h1 {
+  margin-left: 50px;
+  background-color: pink;
+  border-bottom-left-radius: 20px;
+}
+
+.page-container .section-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 600px;
+  background: url(/images/purlple.png) no-repeat;
+  background-size: cover;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-container .section-two article {
+  display: flexbox;
+  text-align: center;
+  width: 100%;
+}
+
+.page-container .section-three {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 600px;
+  background: url(/images/purlple-section2.png) no-repeat;
+  background-size: cover;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,162 +1,210 @@
 *{
-  padding: 0;
+  padding: 0%;
   margin: 0;
-  list-style: none;
   text-decoration: none;
+  
 }
+@mixin button-div($backgroundimage) {
+  margin: 10px;
+  button{
+    background-size: contain;
+    background-position: center;
+    background-image:$backgroundimage ;
+    background-color: white;
+    background-repeat: no-repeat;
+    border: none;
+    
+  }
+}
+$blue-color: white ;
+
 body{
-  background: url(/images/watercolor.jpg)no-repeat;
+  background: url(/images/featherbrown.jpg);
   background-size: cover;
 }
-.nav-container{
-  width: 100vw;
-  height: 80px;
-  margin-left: auto;
-  margin-right: auto;
-  position: fixed;
-  background-color:pink;
-  border-bottom: thick lightpink solid;
+.page-container{
+  width:100vw;
+  height: 100vh;
 }
 header{
-  height: 80px;
+  width: 100%;
+  height: 9.4%;
+  border-bottom: solid thick white;
   nav{
     display: flex;
-    width: 960px;
-    height: 80px;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: space-evenly;
+    width:100%;
+    height: 100%;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
-    .nav-yas{
+    background-color: rgb(224, 161, 79);
+    
+    p{
       display: flexbox;
-      width: 200px;
-      font-size: larger;
-    }
-    .nav-yas-ryan{
-      display: flexbox;
-      width: 200px;
-      background-color: white;
-      font-family: 'Train One', cursive;
-      font-size: 1.7em;
-      font-weight: 700;
-    }
-    .nav-ryan{
-      display: flexbox;
-      width: 200px;
+      margin-left: 100px;
+      text-align: center;
+      font-size: 1.5em;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      padding: 12px 15px;
+      border: solid thick white;
+      border-radius: 20px;
+      .Ryan-logo{
+        color: white;
+        text-decoration: underline;
+      }
+      .Brown-logo{
+        color: green;
+      }
     }
     ul{
+      display: flexbox;
+      margin-right: 70px;
+      font-family: sans-serif;
       li{
-        float: left;
-        width: 200px;
-        line-height: 20px;
-        ul{
-          display: none;
+        padding-left: 20px;
+        display: inline;
+        a{
+          font-size: 1.1em;
+          color: whitesmoke;
         }
-        &:hover ul{
-          display: block;
-          position: absolute;
-          background-color: lightpink;
-          border: solid thick pink;
-          a{
-            font-family: 'Train One', cursive;
-            color: black;
-            font-size: larger;
-            font-weight: 700;
-          }
+        &:nth-last-child(1) a{
+          color: rgb(9, 122, 9);
         }
       }
     }
   }
 }
-.page-container{
-  width: 960px;
+main{
+  display: flex;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  border: lightpink solid thick;
-  border-top: none;
-  background-color: whitesmoke;
+  height: 90%;
+
   section{
-    display: flex;
-    width: 100%;
-    height: 350px;
-    justify-content: space-between;
-    text-align: center;
+    display: flexbox;
+    height: 100%;
+    width: 50%;
+    
+    
+    .section-container{
+      padding-top: 50px;
+      margin-left: 100px;
+      margin-top: 100px;
+      height: 70%;
+      display: grid;
+      font-size: 1.8em;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+      "box1 box1 box1"
+      "box2 box2 box2"
+      "box3 box4 box5"
+      "box6 box7 box7" ;
+      button{
+        width: 100%;
+        height: 100%;
 
-
-
-    .left-main{
-      display: flexbox;
-      width: 315px;
-      height: 100%;
-      h1{
-        background-color: rgb(194, 65, 194);
-        border-bottom-right-radius: 20px;
       }
-    }
-    .middle-main{
-      display: flexbox;
-      width: 315px;
-      height: 100%;
-      font-size: larger;
-      margin-top: 50px;
-      font-family: 'Roboto', sans-serif;
-      article{
+      .box1{
+        grid-area: box1;
+        font-family: 'Roboto', sans-serif;
+        font-size: 45px;
         text-align: center;
-        line-height: 50px;
-        background-color: pink;
-        border: thick dashed lightpink;
-        border-radius: 20px;
+        color: $blue-color;
+        background-color: rgba($color: #9e4141, $alpha: 0.6);
+      }
+      .box2{
+        grid-area: box2;
+        text-align: center;
+        color: $blue-color;
+        font-size: 24px;
+        background-color: rgba($color: #9e4141, $alpha: 0.6);
+      }
+      .box3{
+        grid-area: box3;
+        @include button-div(url(/images/twitter.png));
+      }
+      .box4{
+        padding: 20px;
+        grid-area: box4;
+        background-color: white;
+        @include button-div(url(/images/facebook1.png));
+      }
+      .box5{
+        grid-area: box5;
+        @include button-div(url());
+      }
+      .box6{
+        grid-area: box6;
+        @include button-div(url());
+      }
+      .box7{
+        grid-area: box7;
+        @include button-div(url());
+        border:darkgreen solid thick;
       }
     }
-    .right-main{
-      display: flexbox;
-      width: 315px;
+    .section-container2{
+      display: flex;
       height: 100%;
-      h1{
-        margin-left: 50px;
-        background-color: pink;
-        border-bottom-left-radius: 20px;
-      }
+      width: 100%;
+      justify-content: right;
+      
+      
+      .rightbox-container{
+        display: flexbox;
+        width: 100%;
+        height: 80%;
 
-    }
-  }
-  .section-two{
-    display: flex;
-    height: 600px;
-    background: url(/images/purlple.png)no-repeat purple;
-    background-size: cover;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 4s;
-    article{
-      display: flexbox;
-      text-align: center;
-      width: 100%;
-      color: purple;
-    }
-  }
-  .section-three{
-    display: flex;
-    height: 600px;
-    background: url(/images/purlple-section2.png)no-repeat purple;
-    background-size: cover;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 4s;
-    article{
-      display: flexbox;
-      text-align: center;
-      width: 100%;
-      color: purple;
-    }
-  }
-  .sections-one-two-container:hover{
-    .section-two,.section-three{
-      background-color: white;
-      transition: ease-in-out 4s;
+        .right-backbox1{
+          display: flexbox;
+          height: 100%;
+          width: 85%;
+          float: right;
+          background-color: rgb(172, 83, 83);
+          border:  3px solid white;
+          border-top: none;
+    
+          opacity: 0.9;
+        }
+      }
+      .right-box1{
+        display: flexbox;
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        margin-top: 150px;
+        margin-left: 20px;
+        background-color: rgb(251, 225, 190);
+        background: url(/images/leaf-book.jpg)no-repeat;
+        background-size: cover;
+        background-position: center;
+        border: solid white thick;
+      }
+      .right-box2{
+        position: absolute;
+        display: flexbox;
+        width: 200px;
+        height: 300px;
+        background:url(/images/yasmin.png) rgb(28, 104, 44) no-repeat;
+        border: solid white thick;
+        background-size: cover;
+        background-position: center;
+        margin-top: 50px;
+        margin-left: 240px;
+      }
+      .right-box3{
+        position: absolute;
+        display: flexbox;
+        width: 340px;
+        height: 300px;
+        background-color: rgb(251, 225, 190);
+        background:url(/images/green-leaf.jpg);
+        background-size: cover;
+        border: solid white thick;
+        margin-top: 370px;
+        margin-left: 55px;
+      }
     }
   }
 }

@@ -11,9 +11,10 @@
 </head>
 <body>
   <div class="page-container">
+    
     <header>
       <nav>
-        <p><span class="Ryan-logo">YASMIN</span><span class="Brown-logo"> Mayeh</span></p>
+        <p><span class="Yasmin-logo">YASMIN</span><span class="Mayeh-logo"> May</span></p>
         <ul>
           <li><a href="">HOME</a></li>
           <li><a href="">ABOUT</a></li>
@@ -23,9 +24,31 @@
       </nav>
     </header>
     <main>
+      
+      <div class="pop-up-menu" id="popup-menu">
+        <menu>
+          <div class="x-container" onclick="closemenu()">
+            <div class="x-lines"></div>
+          </div>
+        </menu>
+        <article id="books">
+          <h1>My Favourite books</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel atque soluta quo minus ipsam, consectetur perspiciatis laboriosam id voluptates repudiandae odio, accusantium numquam dolores repellat, quia doloribus officia cumque expedita?</p>
+        </article>
+
+        <article id="photos">
+          <h1>Why i love photography</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, distinctio. Reiciendis autem amet accusamus laboriosam quibusdam quia itaque ab provident, praesentium culpa, natus recusandae similique incidunt, soluta illum quam nam.</p>
+        </article>
+
+        <article id="aboutyas">
+          <h1>its all about me me me!</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, veniam laudantium! A est culpa molestias dolorem sunt eveniet, non voluptas quod veniam. Facilis magnam in, nobis expedita voluptates ea doloremque.</p>
+        </article>
+      </div> 
       <section>
         <div class="section-container">
-          <div class="box1">This is a page about Yasmin Mayeh</div>
+          <div class="aboutYas">This is a page about Yasmin May</div>
           <div class="box2"><article><p> Here is a list of site's that you can contact Yasmin at, to find more information about her use these click-able boxes below and enjoy</p></article></div>
           <div class="box3"><button></button></div>
           <div class="box4"><button></button></div>
@@ -36,10 +59,27 @@
       </section>
       <section>
         <div class="section-container2">
-          <div class="rightbox-container"><div class="right-backbox1"></div></div>
-          <div class="right-box1"></div>
-          <div class="right-box2"></div>
-          <div class="right-box3"></div>
+          <div class="rightbox-container"><div class="right-backbox"></div></div>
+
+          <div class="right-box1" onclick="menu('books')">
+            <div class="centre-right-boxs">
+              <h2>I LOVE BOOKS</h2>
+            </div>
+          </div>
+          
+          <div class="right-box2" onclick="menu('photos')">
+            <div class="centre-right-boxs">
+              <h2>Hey its Yass</h2>
+            </div>
+          </div>
+
+          <div class="right-box3" onclick="menu('aboutyas')">
+            <div class="centre-right-boxs">
+              <h2>My photography</h2>
+            </div>
+          </div>
+
+
         </div>
 
       </section>
@@ -47,6 +87,6 @@
 
 
   </div>
-  
+  <script src="/slider-menu.js"></script>
 </body>
 </html>

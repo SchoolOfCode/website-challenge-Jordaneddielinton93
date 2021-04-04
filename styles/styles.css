@@ -144,14 +144,14 @@ main section .section-container-left .below-top-box {
   background-color: rgba(158, 65, 65, 0.6);
 }
 
-main section .section-container-left .twitter-box {
+main section .section-container-left .twitt-box {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: box3;
   margin: 10px;
 }
 
-main section .section-container-left .twitter-box button {
+main section .section-container-left .twitt-box button {
   background-size: contain;
   background-position: center;
   background-image: url(/images/twitter.png);
@@ -160,7 +160,7 @@ main section .section-container-left .twitter-box button {
   border: none;
 }
 
-main section .section-container-left .facebook-box {
+main section .section-container-left .face-box {
   margin: 20px;
   padding: 0px 10px;
   -ms-grid-row: 3;
@@ -170,7 +170,7 @@ main section .section-container-left .facebook-box {
   margin: 10px;
 }
 
-main section .section-container-left .facebook-box button {
+main section .section-container-left .face-box button {
   background-size: contain;
   background-position: center;
   background-image: url(/images/facebook1.png);

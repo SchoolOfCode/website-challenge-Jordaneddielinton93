@@ -128,11 +128,11 @@ main{
         font-size: 24px;
         background-color: rgba($color: #9e4141, $alpha: 0.6);
       }
-      .twitter-box{
+      .twitt-box{
         grid-area: box3;
         @include button-div(url(/images/twitter.png));
       }
-      .facebook-box{
+      .face-box{
         margin: 20px;
         padding: 0px 10px;
         grid-area: box4;

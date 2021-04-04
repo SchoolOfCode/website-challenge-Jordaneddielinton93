@@ -14,8 +14,12 @@ body {
   height: 100vh;
 }
 
+.page-container #mobile-menu-container {
+  display: none;
+}
+
 header {
-  width: 100%;
+  width: 100vw;
   height: 9.4%;
   border-bottom: solid thick white;
 }
@@ -33,6 +37,10 @@ header nav {
       -ms-flex-align: center;
           align-items: center;
   background-color: #e0a14f;
+}
+
+header nav .mobile-burgerbar-container {
+  display: none;
 }
 
 header nav p {
@@ -53,6 +61,10 @@ header nav p .Yasmin-logo {
 
 header nav p .Mayeh-logo {
   color: green;
+}
+
+header nav ol {
+  display: none;
 }
 
 header nav ul {
@@ -88,7 +100,7 @@ main section {
   width: 50%;
 }
 
-main section .section-container {
+main section .section-container-left {
   padding-top: 10px;
   margin-left: 100px;
   margin-top: 150px;
@@ -104,12 +116,12 @@ main section .section-container {
       grid-template-areas: "box1 box1 box1" "box2 box2 box2" "box3 box4 box5" "box6 box7 box7";
 }
 
-main section .section-container button {
+main section .section-container-left button {
   width: 100%;
   height: 100%;
 }
 
-main section .section-container .aboutYas {
+main section .section-container-left .top-box {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -121,7 +133,7 @@ main section .section-container .aboutYas {
   background-color: rgba(158, 65, 65, 0.6);
 }
 
-main section .section-container .box2 {
+main section .section-container-left .below-top-box {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -132,14 +144,14 @@ main section .section-container .box2 {
   background-color: rgba(158, 65, 65, 0.6);
 }
 
-main section .section-container .box3 {
+main section .section-container-left .twitter-box {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: box3;
   margin: 10px;
 }
 
-main section .section-container .box3 button {
+main section .section-container-left .twitter-box button {
   background-size: contain;
   background-position: center;
   background-image: url(/images/twitter.png);
@@ -148,8 +160,9 @@ main section .section-container .box3 button {
   border: none;
 }
 
-main section .section-container .box4 {
-  padding: 20px;
+main section .section-container-left .facebook-box {
+  margin: 20px;
+  padding: 0px 10px;
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: box4;
@@ -157,7 +170,7 @@ main section .section-container .box4 {
   margin: 10px;
 }
 
-main section .section-container .box4 button {
+main section .section-container-left .facebook-box button {
   background-size: contain;
   background-position: center;
   background-image: url(/images/facebook1.png);
@@ -166,14 +179,14 @@ main section .section-container .box4 button {
   border: none;
 }
 
-main section .section-container .box5 {
+main section .section-container-left .box5 {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   grid-area: box5;
   margin: 10px;
 }
 
-main section .section-container .box5 button {
+main section .section-container-left .box5 button {
   background-size: contain;
   background-position: center;
   background-image: url();
@@ -182,14 +195,14 @@ main section .section-container .box5 button {
   border: none;
 }
 
-main section .section-container .box6 {
+main section .section-container-left .box6 {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: box6;
   margin: 10px;
 }
 
-main section .section-container .box6 button {
+main section .section-container-left .box6 button {
   background-size: contain;
   background-position: center;
   background-image: url();
@@ -198,7 +211,7 @@ main section .section-container .box6 button {
   border: none;
 }
 
-main section .section-container .box7 {
+main section .section-container-left .box7 {
   -ms-grid-row: 4;
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
@@ -207,7 +220,7 @@ main section .section-container .box7 {
   border: darkgreen solid thick;
 }
 
-main section .section-container .box7 button {
+main section .section-container-left .box7 button {
   background-size: contain;
   background-position: center;
   background-image: url();
@@ -216,7 +229,7 @@ main section .section-container .box7 button {
   border: none;
 }
 
-main section .section-container2 {
+main section .section-container-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,13 +240,13 @@ main section .section-container2 {
           justify-content: right;
 }
 
-main section .section-container2 .rightbox-container {
+main section .section-container-right .rightbox-container {
   display: flexbox;
   width: 100%;
   height: 80%;
 }
 
-main section .section-container2 .rightbox-container .right-backbox {
+main section .section-container-right .rightbox-container .right-backbox {
   display: flexbox;
   height: 100%;
   width: 85%;
@@ -244,7 +257,7 @@ main section .section-container2 .rightbox-container .right-backbox {
   opacity: 0.9;
 }
 
-main section .section-container2 .right-box1 {
+main section .section-container-right .right-box1 {
   display: flexbox;
   position: absolute;
   width: 200px;
@@ -258,7 +271,7 @@ main section .section-container2 .right-box1 {
   border: solid white thick;
 }
 
-main section .section-container2 .right-box2 {
+main section .section-container-right .right-box2 {
   position: absolute;
   display: flexbox;
   width: 200px;
@@ -271,7 +284,7 @@ main section .section-container2 .right-box2 {
   margin-left: 240px;
 }
 
-main section .section-container2 .right-box3 {
+main section .section-container-right .right-box3 {
   position: absolute;
   display: flexbox;
   width: 340px;
@@ -375,7 +388,7 @@ main #popup-menu #aboutyas {
   display: none;
 }
 
-.centre-right-boxs {
+.centre-box-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -389,12 +402,12 @@ main #popup-menu #aboutyas {
           align-items: center;
 }
 
-.centre-right-boxs h2 {
+.centre-box-title h2 {
   display: flexbox;
   font-size: 0%;
 }
 
-.centre-right-boxs:hover {
+.centre-box-title:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -405,7 +418,7 @@ main #popup-menu #aboutyas {
   transition: 1s;
 }
 
-.centre-right-boxs:hover h2 {
+.centre-box-title:hover h2 {
   display: flexbox;
   text-align: center;
   font-size: 1.5em;

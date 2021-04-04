@@ -7,5 +7,8 @@ function closemenu(){
   document.getElementById("books").style.display = "none"
   document.getElementById("photos").style.display = "none"
   document.getElementById("aboutyas").style.display = "none"
+}
+function mobileMenu(){
+  document.getElementById("mobile-menu-container").style.display = "flex";
 
 }

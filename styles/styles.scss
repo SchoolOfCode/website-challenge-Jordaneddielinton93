@@ -17,8 +17,6 @@
   }
 }
 
-
-
 $blue-color: white ;
 
 body{
@@ -28,9 +26,12 @@ body{
 .page-container{
   width:100vw;
   height: 100vh;
+  #mobile-menu-container{
+    display: none;
+  }
 }
 header{
-  width: 100%;
+  width: 100vw;
   height: 9.4%;
   border-bottom: solid thick white;
   nav{
@@ -40,7 +41,10 @@ header{
     justify-content: space-between;
     align-items: center;
     background-color: rgb(224, 161, 79);
-    
+
+    .mobile-burgerbar-container{
+      display: none;
+    }
     p{
       display: flexbox;
       margin-left: 100px;
@@ -57,6 +61,9 @@ header{
       .Mayeh-logo{
         color: green;
       }
+    }
+    ol{
+      display: none;
     }
     ul{
       display: flexbox;
@@ -78,7 +85,6 @@ header{
 }
 main{
   display: flex;
-  
   height: 90%;
 
   section{
@@ -87,7 +93,7 @@ main{
     width: 50%;
     
     
-    .section-container{
+    .section-container-left{
       padding-top: 10px;
       margin-left: 100px;
       margin-top: 150px;
@@ -107,7 +113,7 @@ main{
         height: 100%;
 
       }
-      .aboutYas{
+      .top-box{
         grid-area: box1;
         font-family: 'Roboto', sans-serif;
         font-size: 45px;
@@ -115,19 +121,20 @@ main{
         color: $blue-color;
         background-color: rgba($color: #9e4141, $alpha: 0.6);
       }
-      .box2{
+      .below-top-box{
         grid-area: box2;
         text-align: center;
         color: $blue-color;
         font-size: 24px;
         background-color: rgba($color: #9e4141, $alpha: 0.6);
       }
-      .box3{
+      .twitter-box{
         grid-area: box3;
         @include button-div(url(/images/twitter.png));
       }
-      .box4{
-        padding: 20px;
+      .facebook-box{
+        margin: 20px;
+        padding: 0px 10px;
         grid-area: box4;
         background-color: white;
         @include button-div(url(/images/facebook1.png));
@@ -146,7 +153,7 @@ main{
         border:darkgreen solid thick;
       }
     }
-    .section-container2{
+    .section-container-right{
       display: flex;
       height: 100%;
       width: 100%;
@@ -166,7 +173,6 @@ main{
           background-color: rgb(172, 83, 83);
           border:  3px solid white;
           border-top: none;
-    
           opacity: 0.9;
         }
       }

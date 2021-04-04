@@ -7,13 +7,27 @@
   <link rel="stylesheet" href="/styles/styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/mobile.css">
   <title>Document</title>
 </head>
 <body>
   <div class="page-container">
-    
+    <button id="mobile-menu-container" onclick="mobileMenu()">
+      <ol>
+        <li>About Yas</li>
+        <li>Photos</li>
+        <li>Books</li>
+      </ol>
+    </button>
+
+    <!-- HEADER -->
     <header>
       <nav>
+
+        <div class="mobile-burgerbar-container">
+          <span></span>
+        </div>
+
         <p><span class="Yasmin-logo">YASMIN</span><span class="Mayeh-logo"> Mayeh</span></p>
         <ul>
           <li><a href="">HOME</a></li>
@@ -23,8 +37,11 @@
         </ul>
       </nav>
     </header>
+    <!-- HEADER -->
+
+    
     <main>
-      
+      <!-- THIS IS A POPUP MENU -->
       <div class="pop-up-menu" id="popup-menu">
         <menu>
           <div class="x-container" onclick="closemenu()">
@@ -45,47 +62,50 @@
           <h1>its all about me me me!</h1>
           <p>hey im yass, im a very busy hardworking individual very fast at learning and wise at picking new concepts up. Interest are photography, hiking, reading don’t really have a favourite colour but earthy tones neutral colours are my thing hense the colour scheme of this site  </p>
         </article>
-      </div> 
+      </div>
+      <!-- THIS IS A POPUP MENU -->
+
+      <!-- LEFT SIDE OF THE SCREEN -->
       <section>
-        <div class="section-container">
-          <div class="aboutYas">This is a page about Yasmin May</div>
-          <div class="box2"><article><p> Here is a list of site's that you can contact Yasmin at, to find more information about her use these click-able boxes below and enjoy</p></article></div>
-          <div class="box3"><button></button></div>
-          <div class="box4"><button></button></div>
+        <div class="section-container-left">
+          <div class="top-box">This is a page about Yasmin Mayeh</div>
+          <div class="below-top-box"><article><p> Here is a list of site's that you can contact Yasmin at, to find more information about her use these click-able boxes below and enjoy</p></article></div>
+          <div class="twitter-box"><button></button></div>
+          <div class="facebook-box"><button></button></div>
           <div class="box5"><button></button></div>
           <div class="box6"><button></button></div>
           <div class="box7"><button></button></div>
         </div>
       </section>
+      <!-- LEFT SIDE OF THE SCREEN -->
+
+      <!-- RIGHT SIDE OF THE SCREEN -->
       <section>
-        <div class="section-container2">
+        <div class="section-container-right">
           <div class="rightbox-container"><div class="right-backbox"></div></div>
 
           <div class="right-box1" onclick="menu('books')">
-            <div class="centre-right-boxs">
+            <div class="centre-box-title">
               <h2>I LOVE BOOKS</h2>
             </div>
           </div>
           
           <div class="right-box2" onclick="menu('photos')">
-            <div class="centre-right-boxs">
+            <div class="centre-box-title">
               <h2>Hey its Yass</h2>
             </div>
           </div>
 
           <div class="right-box3" onclick="menu('aboutyas')">
-            <div class="centre-right-boxs">
+            <div class="centre-box-title">
               <h2>My photography</h2>
             </div>
           </div>
-
-
         </div>
-
       </section>
+      <!-- RIGHT SIDE OF THE SCREEN -->
+
     </main>
-
-
   </div>
   <script src="/slider-menu.js"></script>
 </body>

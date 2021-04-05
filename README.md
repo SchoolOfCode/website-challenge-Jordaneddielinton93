@@ -1,5 +1,8 @@
 # MY LEARNING PROGRESS  
-  ---
+  ---  
+  ## last update
+  - [x] *Made the site live*
+  --- 
 * Building this site was a handfull i create a site that i liked but then quicckly realised it was meant to be paired coding.
 * We all then got to gether and streamed our pages on discord and helped each other with what we wanted in each other site and how things should be built
   1. color schemes and styling of the site 

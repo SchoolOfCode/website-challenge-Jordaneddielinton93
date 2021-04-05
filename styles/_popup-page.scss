@@ -6,10 +6,11 @@ main{
     height: 90vh;
     width: 50vw;
     position: absolute;
-    background-color: gray;
+    background: url(/images/vally.jpg);
+    background-size: cover;
     border-left: solid thick white;
     z-index: 10;
-    opacity: 0.9;
+   
     transition: width 3s;
     
     menu{

@@ -5,7 +5,7 @@
 }
 
 body {
-  background: url(/images/featherbrown.jpg);
+  background: url(/images/logsback.jpg);
   background-size: cover;
 }
 
@@ -21,7 +21,6 @@ body {
 header {
   width: 100vw;
   height: 9.4%;
-  border-bottom: solid thick white;
 }
 
 header nav {
@@ -37,6 +36,7 @@ header nav {
       -ms-flex-align: center;
           align-items: center;
   background-color: #e0a14f;
+  border-bottom: solid thick white;
 }
 
 header nav .mobile-burgerbar-container {
@@ -49,7 +49,7 @@ header nav p {
   text-align: center;
   font-size: 1.5em;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  padding: 12px 15px;
+  padding: 0.5em 1em;
   border: solid thick white;
   border-radius: 20px;
 }
@@ -74,12 +74,13 @@ header nav ul {
 }
 
 header nav ul li {
+  font-size: 1.1rem;
   padding-left: 20px;
   display: inline;
 }
 
 header nav ul li a {
-  font-size: 1.1em;
+  font-size: 1.1rem;
   color: whitesmoke;
 }
 
@@ -104,6 +105,7 @@ main section .section-container-left {
   padding-top: 10px;
   margin-left: 100px;
   margin-top: 150px;
+  margin-right: 10px;
   border: white thick solid;
   height: 70%;
   display: -ms-grid;
@@ -122,21 +124,20 @@ main section .section-container-left button {
 }
 
 main section .section-container-left .top-box {
-  -ms-grid-row: 1;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-area: box1;
   font-family: 'Roboto', sans-serif;
-  font-size: 45px;
+  font-size: 1.5em;
   text-align: center;
   color: white;
   background-color: rgba(158, 65, 65, 0.6);
 }
 
 main section .section-container-left .below-top-box {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
   grid-area: box2;
   text-align: center;
   color: white;
@@ -147,6 +148,7 @@ main section .section-container-left .below-top-box {
 main section .section-container-left .twitt-box {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: box3;
   margin: 10px;
 }
@@ -240,6 +242,63 @@ main section .section-container-right {
           justify-content: right;
 }
 
+main section .section-container-right .picture-containers {
+  display: -ms-grid;
+  display: grid;
+  position: absolute;
+  width: 50%;
+  height: 70vh;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: ". box2" "box1 box2" "box3 box3";
+}
+
+main section .section-container-right .picture-containers .right-box1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: box1;
+  display: flexbox;
+  height: 200px;
+  background-color: #fbe1be;
+  background: url(/images/leaf-book.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: solid white thick;
+  margin: 2px;
+}
+
+main section .section-container-right .picture-containers .right-box2 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: box2;
+  display: flexbox;
+  height: 300px;
+  background: url(/images/yasmin.png) #1c682c no-repeat;
+  border: solid white thick;
+  background-size: contain;
+  background-position: center;
+  -ms-flex-item-align: end;
+      align-self: end;
+  margin: 2px;
+}
+
+main section .section-container-right .picture-containers .right-box3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: box3;
+  display: flexbox;
+  height: 300px;
+  background-color: #fbe1be;
+  background: url(/images/green-leaf.jpg) no-repeat;
+  background-size: cover;
+  border: solid white thick;
+  margin: 2px;
+}
+
 main section .section-container-right .rightbox-container {
   display: flexbox;
   width: 100%;
@@ -257,46 +316,6 @@ main section .section-container-right .rightbox-container .right-backbox {
   opacity: 0.9;
 }
 
-main section .section-container-right .right-box1 {
-  display: flexbox;
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  margin-top: 150px;
-  margin-left: 20px;
-  background-color: #fbe1be;
-  background: url(/images/leaf-book.jpg) no-repeat;
-  background-size: cover;
-  background-position: center;
-  border: solid white thick;
-}
-
-main section .section-container-right .right-box2 {
-  position: absolute;
-  display: flexbox;
-  width: 200px;
-  height: 300px;
-  background: url(/images/yasmin.png) #1c682c no-repeat;
-  border: solid white thick;
-  background-size: cover;
-  background-position: center;
-  margin-top: 50px;
-  margin-left: 240px;
-}
-
-main section .section-container-right .right-box3 {
-  position: absolute;
-  display: flexbox;
-  width: 340px;
-  height: 300px;
-  background-color: #fbe1be;
-  background: url(/images/green-leaf.jpg);
-  background-size: cover;
-  border: solid white thick;
-  margin-top: 370px;
-  margin-left: 55px;
-}
-
 main #popup-menu {
   display: none;
   position: absolute;
@@ -304,10 +323,10 @@ main #popup-menu {
   height: 90vh;
   width: 50vw;
   position: absolute;
-  background-color: gray;
+  background: url(/images/vally.jpg);
+  background-size: cover;
   border-left: solid thick white;
   z-index: 10;
-  opacity: 0.9;
   -webkit-transition: width 3s;
   transition: width 3s;
 }

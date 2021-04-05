@@ -25,6 +25,10 @@
   }
   header{
     nav{
+      p{
+        padding-left: 5px;
+        padding-right: 5px;
+      }
       justify-content: center;
       .mobile-burgerbar-container{
         display: flex;
@@ -70,8 +74,14 @@
     }
 
   }
+  body{
+    background-image: url(/images/log.jpg);
+    background-size: cover;
+    background-position: center;
+  }
   main{
     height: 85%;
+    
   section{
     .section-container-left{
       width: 100vw;

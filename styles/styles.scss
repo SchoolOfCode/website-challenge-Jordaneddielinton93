@@ -20,7 +20,7 @@
 $blue-color: white ;
 
 body{
-  background: url(/images/featherbrown.jpg);
+  background: url(/images/logsback.jpg);
   background-size: cover;
 }
 .page-container{
@@ -33,7 +33,7 @@ body{
 header{
   width: 100vw;
   height: 9.4%;
-  border-bottom: solid thick white;
+  
   nav{
     display: flex;
     width:100%;
@@ -41,6 +41,7 @@ header{
     justify-content: space-between;
     align-items: center;
     background-color: rgb(224, 161, 79);
+    border-bottom: solid thick white;
 
     .mobile-burgerbar-container{
       display: none;
@@ -51,7 +52,7 @@ header{
       text-align: center;
       font-size: 1.5em;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      padding: 12px 15px;
+      padding: 0.5em 1em;
       border: solid thick white;
       border-radius: 20px;
       .Yasmin-logo{
@@ -70,10 +71,11 @@ header{
       margin-right: 70px;
       font-family: sans-serif;
       li{
+        font-size: 1.1rem;
         padding-left: 20px;
         display: inline;
         a{
-          font-size: 1.1em;
+          font-size: 1.1rem;
           color: whitesmoke;
         }
         &:nth-last-child(1) a{
@@ -91,12 +93,12 @@ main{
     display: flexbox;
     height: 100%;
     width: 50%;
-    
-    
+
     .section-container-left{
       padding-top: 10px;
       margin-left: 100px;
       margin-top: 150px;
+      margin-right: 10px;
       border: white thick solid;
       height: 70%;
       display: grid;
@@ -116,7 +118,7 @@ main{
       .top-box{
         grid-area: box1;
         font-family: 'Roboto', sans-serif;
-        font-size: 45px;
+        font-size: 1.5em;
         text-align: center;
         color: $blue-color;
         background-color: rgba($color: #9e4141, $alpha: 0.6);
@@ -158,12 +160,58 @@ main{
       height: 100%;
       width: 100%;
       justify-content: right;
-      
-      
+      .picture-containers{
+        display: grid;
+        position: absolute;
+        width: 50%;
+        height: 70vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        ". box2"
+        "box1 box2"
+        "box3 box3"
+        ;
+
+        .right-box1{
+          grid-area: box1 ;
+          display: flexbox;
+          height: 200px;
+          background-color: rgb(251, 225, 190);
+          background: url(/images/leaf-book.jpg)no-repeat;
+          background-size: cover;
+          background-position: center;
+          border: solid white thick;
+          margin: 2px;
+        }
+        .right-box2{
+          grid-area: box2;
+          display: flexbox;
+          height: 300px;
+          background:url(/images/yasmin.png) rgb(28, 104, 44) no-repeat;
+          border: solid white thick;
+          background-size: contain;
+          background-position: center;
+          align-self: end;
+          margin: 2px;
+        }
+        .right-box3{
+          grid-area: box3;
+          display: flexbox;
+          height: 300px;
+          background-color: rgb(251, 225, 190);
+          background:url(/images/green-leaf.jpg)no-repeat;
+          background-size: cover;
+          border: solid white thick;
+          margin: 2px;
+
+        }
+      }
       .rightbox-container{
         display: flexbox;
         width: 100%;
         height: 80%;
+        
 
         .right-backbox{
           display: flexbox;
@@ -175,43 +223,6 @@ main{
           border-top: none;
           opacity: 0.9;
         }
-      }
-      .right-box1{
-        display: flexbox;
-        position: absolute;
-        width: 200px;
-        height: 200px;
-        margin-top: 150px;
-        margin-left: 20px;
-        background-color: rgb(251, 225, 190);
-        background: url(/images/leaf-book.jpg)no-repeat;
-        background-size: cover;
-        background-position: center;
-        border: solid white thick;
-      }
-      .right-box2{
-        position: absolute;
-        display: flexbox;
-        width: 200px;
-        height: 300px;
-        background:url(/images/yasmin.png) rgb(28, 104, 44) no-repeat;
-        border: solid white thick;
-        background-size: cover;
-        background-position: center;
-        margin-top: 50px;
-        margin-left: 240px;
-      }
-      .right-box3{
-        position: absolute;
-        display: flexbox;
-        width: 340px;
-        height: 300px;
-        background-color: rgb(251, 225, 190);
-        background:url(/images/green-leaf.jpg);
-        background-size: cover;
-        border: solid white thick;
-        margin-top: 370px;
-        margin-left: 55px;
       }
     }
   }

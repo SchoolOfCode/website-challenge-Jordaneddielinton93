@@ -27,6 +27,10 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
+  header nav p {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
   header nav .mobile-burgerbar-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -71,6 +75,11 @@
   }
   header nav ul {
     display: none;
+  }
+  body {
+    background-image: url(/images/log.jpg);
+    background-size: cover;
+    background-position: center;
   }
   main {
     height: 85%;

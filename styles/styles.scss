@@ -128,30 +128,36 @@ main{
         text-align: center;
         color: $blue-color;
         font-size: 24px;
-        background-color: rgba($color: #9e4141, $alpha: 0.6);
+        background:url(/images/logsback.jpg);
+        background-size: cover;
       }
       .twitt-box{
         grid-area: box3;
-        @include button-div(url(/images/twitter.png));
+        @include button-div(url(/images/twi.png));
+        border:darkgreen solid thick;
+        
       }
       .face-box{
         margin: 20px;
         padding: 0px 10px;
         grid-area: box4;
         background-color: white;
-        @include button-div(url(/images/facebook1.png));
+        @include button-div(url(/images/facebk.png));
+        border:darkgreen solid thick;
       }
       .box5{
         grid-area: box5;
-        @include button-div(url());
+        @include button-div(url(/images/linkn.png));
+        border:darkgreen solid thick;
       }
       .box6{
         grid-area: box6;
-        @include button-div(url());
+        @include button-div(url(/images/grams.png));
+        border:darkgreen solid thick;
       }
       .box7{
         grid-area: box7;
-        @include button-div(url());
+        @include button-div(url(/images/sna.png));
         border:darkgreen solid thick;
       }
     }
@@ -218,7 +224,9 @@ main{
           height: 100%;
           width: 85%;
           float: right;
-          background-color: rgb(172, 83, 83);
+          background-color: #FBDA61;
+          background-image: linear-gradient(45deg,#057c0b 0% , rgb(251, 225, 190) 100%);
+
           border:  3px solid white;
           border-top: none;
           opacity: 0.9;

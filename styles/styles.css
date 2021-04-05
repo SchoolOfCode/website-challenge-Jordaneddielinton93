@@ -142,7 +142,8 @@ main section .section-container-left .below-top-box {
   text-align: center;
   color: white;
   font-size: 24px;
-  background-color: rgba(158, 65, 65, 0.6);
+  background: url(/images/logsback.jpg);
+  background-size: cover;
 }
 
 main section .section-container-left .twitt-box {
@@ -151,12 +152,13 @@ main section .section-container-left .twitt-box {
   -ms-grid-column-span: 2;
   grid-area: box3;
   margin: 10px;
+  border: darkgreen solid thick;
 }
 
 main section .section-container-left .twitt-box button {
   background-size: contain;
   background-position: center;
-  background-image: url(/images/twitter.png);
+  background-image: url(/images/twi.png);
   background-color: white;
   background-repeat: no-repeat;
   border: none;
@@ -170,12 +172,13 @@ main section .section-container-left .face-box {
   grid-area: box4;
   background-color: white;
   margin: 10px;
+  border: darkgreen solid thick;
 }
 
 main section .section-container-left .face-box button {
   background-size: contain;
   background-position: center;
-  background-image: url(/images/facebook1.png);
+  background-image: url(/images/facebk.png);
   background-color: white;
   background-repeat: no-repeat;
   border: none;
@@ -186,12 +189,13 @@ main section .section-container-left .box5 {
   -ms-grid-column: 3;
   grid-area: box5;
   margin: 10px;
+  border: darkgreen solid thick;
 }
 
 main section .section-container-left .box5 button {
   background-size: contain;
   background-position: center;
-  background-image: url();
+  background-image: url(/images/linkn.png);
   background-color: white;
   background-repeat: no-repeat;
   border: none;
@@ -202,12 +206,13 @@ main section .section-container-left .box6 {
   -ms-grid-column: 1;
   grid-area: box6;
   margin: 10px;
+  border: darkgreen solid thick;
 }
 
 main section .section-container-left .box6 button {
   background-size: contain;
   background-position: center;
-  background-image: url();
+  background-image: url(/images/grams.png);
   background-color: white;
   background-repeat: no-repeat;
   border: none;
@@ -225,7 +230,7 @@ main section .section-container-left .box7 {
 main section .section-container-left .box7 button {
   background-size: contain;
   background-position: center;
-  background-image: url();
+  background-image: url(/images/sna.png);
   background-color: white;
   background-repeat: no-repeat;
   border: none;
@@ -310,7 +315,8 @@ main section .section-container-right .rightbox-container .right-backbox {
   height: 100%;
   width: 85%;
   float: right;
-  background-color: #ac5353;
+  background-color: #FBDA61;
+  background-image: linear-gradient(45deg, #057c0b 0%, #fbe1be 100%);
   border: 3px solid white;
   border-top: none;
   opacity: 0.9;

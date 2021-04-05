@@ -32,7 +32,7 @@ body{
 }
 header{
   width: 100vw;
-  height: 9.4%;
+  height: 10%;
   
   nav{
     display: flex;
@@ -71,7 +71,7 @@ header{
       margin-right: 70px;
       font-family: sans-serif;
       li{
-        font-size: 1.1rem;
+        
         padding-left: 20px;
         display: inline;
         a{
@@ -118,18 +118,21 @@ main{
       .top-box{
         grid-area: box1;
         font-family: 'Roboto', sans-serif;
-        font-size: 1.5em;
+        font-size: 3.5rem;
         text-align: center;
         color: $blue-color;
         background-color: rgba($color: #9e4141, $alpha: 0.6);
+        padding: 0 0.5em;
+        
       }
       .below-top-box{
         grid-area: box2;
         text-align: center;
         color: $blue-color;
-        font-size: 24px;
-        background:url(/images/logsback.jpg);
-        background-size: cover;
+        font-size: 0.7em;
+        background-color: rgba($color: #9e4141, $alpha: 0.6);
+        padding: 0 0.5em;
+        
       }
       .twitt-box{
         grid-area: box3;
@@ -193,7 +196,7 @@ main{
         .right-box2{
           grid-area: box2;
           display: flexbox;
-          height: 300px;
+          height: 89%;
           background:url(/images/yasmin.png) rgb(28, 104, 44) no-repeat;
           border: solid white thick;
           background-size: contain;
@@ -226,7 +229,6 @@ main{
           float: right;
           background-color: #FBDA61;
           background-image: linear-gradient(45deg,#057c0b 0% , rgb(251, 225, 190) 100%);
-
           border:  3px solid white;
           border-top: none;
           opacity: 0.9;

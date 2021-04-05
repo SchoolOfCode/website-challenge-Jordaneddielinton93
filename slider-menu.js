@@ -8,7 +8,14 @@ function closemenu(){
   document.getElementById("photos").style.display = "none"
   document.getElementById("aboutyas").style.display = "none"
 }
+let onoff = false;
 function mobileMenu(){
-  document.getElementById("mobile-menu-container").style.display = "flex";
+  if(!onoff){
+    document.getElementById("mobile-menu-container").style.display = "flex";
+    onoff = true;
 
+  }else{
+    document.getElementById("mobile-menu-container").style.display = "none";
+    onoff = false;
+  }
 }

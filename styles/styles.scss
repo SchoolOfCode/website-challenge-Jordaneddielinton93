@@ -15,6 +15,7 @@ $orange:#F2AA4CFF;
   margin: 2px;
   &:hover{
     border-image-source: linear-gradient(to left, $orange, $black);
+    transition: 2s;
     transform: translate(7px, -30px);
   }
 }
@@ -68,9 +69,11 @@ header{
       margin-right: 70px;
       font-family: sans-serif;
       li{
-        
         margin-left: 20px;
         display: inline;
+        &:hover a{
+          color: $orange;
+        }
         a{
           font-size: 1.1rem;
           color: whitesmoke;
@@ -103,6 +106,8 @@ main{
       border:6px solid;
       border-image-source: linear-gradient(to left, green, white);
       border-image-slice: 60 30;
+      background-color: $black;
+      padding: 30px;
       display: flex;
       height: 100%;
       width: 50%;
@@ -114,16 +119,29 @@ main{
         height:50% ;
         width: 100%;
         overflow: hidden;
+        h1{
+          
+          color: white;
+        }
+        p{
+          color: green;
+          
+          
+        }
         .grid-container{
           width: 100%;
           height: 100%;
           font-size: 1rem;
           display: grid;
+          opacity: 0.5;
           grid-template-columns: 1fr 1fr 1fr;
           grid-template-rows: 1fr 1fr;
           grid-template-areas: 
           "box1 box2 box3"
           "box4 box5 box6";
+          &:hover{
+            opacity: 1;
+          }
           .box1-left{
             @include bordergrad();
             background:url(/images/twi.png)white no-repeat;
@@ -202,20 +220,21 @@ main{
         grid-area: box1;
         background: url(/images/leaf-book.jpg) no-repeat;
         background-size: cover;
-        @include bordergrad()
+        @include bordergrad();
       }
       .box2-right-yas{
         grid-area: box2;
-        background: url(/images/yasmin.png)no-repeat;
+        background: url(/images/yasmin.png) $black no-repeat;
         background-size: contain;
-        @include bordergrad()
+        @include bordergrad();
+      
         
       }
       .box3-right-photo{
         grid-area: box3;
         background: url(/images/green-leaf.jpg);
         background-size: cover;
-        @include bordergrad()
+        @include bordergrad();
       }
     }
   }

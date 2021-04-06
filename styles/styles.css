@@ -74,6 +74,10 @@ header nav ul li {
   display: inline;
 }
 
+header nav ul li:hover a {
+  color: #F2AA4CFF;
+}
+
 header nav ul li a {
   font-size: 1.1rem;
   color: whitesmoke;
@@ -119,6 +123,8 @@ main section .left-side-screen {
   border: 6px solid;
   border-image-source: linear-gradient(to left, green, white);
   border-image-slice: 60 30;
+  background-color: #101820FF;
+  padding: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,17 +145,30 @@ main section .left-side-screen .top-bottom {
   overflow: hidden;
 }
 
+main section .left-side-screen .top-bottom h1 {
+  color: white;
+}
+
+main section .left-side-screen .top-bottom p {
+  color: green;
+}
+
 main section .left-side-screen .top-bottom .grid-container {
   width: 100%;
   height: 100%;
   font-size: 1rem;
   display: -ms-grid;
   display: grid;
+  opacity: 0.5;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       grid-template-areas: "box1 box2 box3" "box4 box5 box6";
+}
+
+main section .left-side-screen .top-bottom .grid-container:hover {
+  opacity: 1;
 }
 
 main section .left-side-screen .top-bottom .grid-container .box1-left {
@@ -169,6 +188,8 @@ main section .left-side-screen .top-bottom .grid-container .box1-left {
 
 main section .left-side-screen .top-bottom .grid-container .box1-left:hover {
   border-image-source: linear-gradient(to left, #F2AA4CFF, #101820FF);
+  -webkit-transition: 2s;
+  transition: 2s;
   -webkit-transform: translate(7px, -30px);
           transform: translate(7px, -30px);
 }
@@ -189,6 +210,8 @@ main section .left-side-screen .top-bottom .grid-container .box2-left {
 
 main section .left-side-screen .top-bottom .grid-container .box2-left:hover {
   border-image-source: linear-gradient(to left, #F2AA4CFF, #101820FF);
+  -webkit-transition: 2s;
+  transition: 2s;
   -webkit-transform: translate(7px, -30px);
           transform: translate(7px, -30px);
 }
@@ -209,6 +232,8 @@ main section .left-side-screen .top-bottom .grid-container .box3-left {
 
 main section .left-side-screen .top-bottom .grid-container .box3-left:hover {
   border-image-source: linear-gradient(to left, #F2AA4CFF, #101820FF);
+  -webkit-transition: 2s;
+  transition: 2s;
   -webkit-transform: translate(7px, -30px);
           transform: translate(7px, -30px);
 }
@@ -229,6 +254,8 @@ main section .left-side-screen .top-bottom .grid-container .box4-left {
 
 main section .left-side-screen .top-bottom .grid-container .box4-left:hover {
   border-image-source: linear-gradient(to left, #F2AA4CFF, #101820FF);
+  -webkit-transition: 2s;
+  transition: 2s;
   -webkit-transform: translate(7px, -30px);
           transform: translate(7px, -30px);
 }
@@ -249,6 +276,8 @@ main section .left-side-screen .top-bottom .grid-container .box5-left {
 
 main section .left-side-screen .top-bottom .grid-container .box5-left:hover {
   border-image-source: linear-gradient(to left, #F2AA4CFF, #101820FF);
+  -webkit-transition: 2s;
+  transition: 2s;
   -webkit-transform: translate(7px, -30px);
           transform: translate(7px, -30px);
 }
@@ -269,6 +298,8 @@ main section .left-side-screen .top-bottom .grid-container .box6-left {
 
 main section .left-side-screen .top-bottom .grid-container .box6-left:hover {
   border-image-source: linear-gradient(to left, #F2AA4CFF, #101820FF);
+  -webkit-transition: 2s;
+  transition: 2s;
   -webkit-transform: translate(7px, -30px);
           transform: translate(7px, -30px);
 }
@@ -330,6 +361,8 @@ main section .right-side-screen .box1-right-book {
 
 main section .right-side-screen .box1-right-book:hover {
   border-image-source: linear-gradient(to left, #F2AA4CFF, #101820FF);
+  -webkit-transition: 2s;
+  transition: 2s;
   -webkit-transform: translate(7px, -30px);
           transform: translate(7px, -30px);
 }
@@ -338,7 +371,7 @@ main section .right-side-screen .box2-right-yas {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: box2;
-  background: url(/images/yasmin.png) no-repeat;
+  background: url(/images/yasmin.png) #101820FF no-repeat;
   background-size: contain;
   border: 6px solid;
   border-image-source: linear-gradient(to left, #101820FF, #F2AA4CFF);
@@ -349,6 +382,8 @@ main section .right-side-screen .box2-right-yas {
 
 main section .right-side-screen .box2-right-yas:hover {
   border-image-source: linear-gradient(to left, #F2AA4CFF, #101820FF);
+  -webkit-transition: 2s;
+  transition: 2s;
   -webkit-transform: translate(7px, -30px);
           transform: translate(7px, -30px);
 }
@@ -368,6 +403,8 @@ main section .right-side-screen .box3-right-photo {
 
 main section .right-side-screen .box3-right-photo:hover {
   border-image-source: linear-gradient(to left, #F2AA4CFF, #101820FF);
+  -webkit-transition: 2s;
+  transition: 2s;
   -webkit-transform: translate(7px, -30px);
           transform: translate(7px, -30px);
 }
@@ -481,6 +518,8 @@ main #popup-menu article .popup-grid-container .box1 {
 
 main #popup-menu article .popup-grid-container .box1:hover {
   border-image-source: linear-gradient(to left, #F2AA4CFF, #101820FF);
+  -webkit-transition: 2s;
+  transition: 2s;
   -webkit-transform: translate(7px, -30px);
           transform: translate(7px, -30px);
 }
@@ -500,6 +539,8 @@ main #popup-menu article .popup-grid-container .box2 {
 
 main #popup-menu article .popup-grid-container .box2:hover {
   border-image-source: linear-gradient(to left, #F2AA4CFF, #101820FF);
+  -webkit-transition: 2s;
+  transition: 2s;
   -webkit-transform: translate(7px, -30px);
           transform: translate(7px, -30px);
 }
@@ -519,6 +560,8 @@ main #popup-menu article .popup-grid-container .box3 {
 
 main #popup-menu article .popup-grid-container .box3:hover {
   border-image-source: linear-gradient(to left, #F2AA4CFF, #101820FF);
+  -webkit-transition: 2s;
+  transition: 2s;
   -webkit-transform: translate(7px, -30px);
           transform: translate(7px, -30px);
 }

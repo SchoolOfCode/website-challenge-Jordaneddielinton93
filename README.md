@@ -2,6 +2,10 @@
   ---  
   ## last update
   - [x] *Made the site live*
+  - [x] *Restarted the hole site still using small amounts of reusuable code*
+  - [x] it now work's even better the responsiveness works great
+  - [x] Made the popup menu work on mobile's and made it appear from the bottom not the side.
+  
   --- 
 * Building this site was a handfull i create a site that i liked but then quicckly realised it was meant to be paired coding.
 * We all then got to gether and streamed our pages on discord and helped each other with what we wanted in each other site and how things should be built

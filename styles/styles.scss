@@ -2,27 +2,24 @@
   padding: 0%;
   margin: 0;
   text-decoration: none;
-  
+  font-family: 'Montserrat', sans-serif;
 }
-@mixin button-div($backgroundimage) {
-  margin: 10px;
-  button{
-    background-size: contain;
-    background-position: center;
-    background-image:$backgroundimage ;
-    background-color: white;
-    background-repeat: no-repeat;
-    border: none;
-    
+$black:#101820FF;
+$orange:#F2AA4CFF;
+
+@mixin bordergrad {
+  border:6px solid;
+  border-image-source: linear-gradient(to left, $black, $orange);
+  border-image-slice: 60 30;
+  background-position: center;
+  margin: 2px;
+  &:hover{
+    border-image-source: linear-gradient(to left, $orange, $black);
+    transform: translate(7px, -30px);
   }
 }
 
-$blue-color: white ;
 
-body{
-  background: url(/images/logsback.jpg);
-  background-size: cover;
-}
 .page-container{
   width:100vw;
   height: 100vh;
@@ -40,7 +37,7 @@ header{
     height: 100%;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(224, 161, 79);
+    background-color: $black;
     border-bottom: solid thick white;
 
     .mobile-burgerbar-container{
@@ -48,11 +45,11 @@ header{
     }
     p{
       display: flexbox;
-      margin-left: 100px;
+      margin-left: 10px;
       text-align: center;
       font-size: 1.5em;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      padding: 0.5em 1em;
+      padding: 0.5em 0.7em;
       border: solid thick white;
       border-radius: 20px;
       .Yasmin-logo{
@@ -72,7 +69,7 @@ header{
       font-family: sans-serif;
       li{
         
-        padding-left: 20px;
+        margin-left: 20px;
         display: inline;
         a{
           font-size: 1.1rem;
@@ -87,152 +84,137 @@ header{
 }
 main{
   display: flex;
-  height: 90%;
+  height: 90vh;
+  width: 100vw;
+  background-color: $orange;
+  justify-content: center;
+  align-items: center;
 
-  section{
-    display: flexbox;
-    height: 100%;
-    width: 50%;
-
-    .section-container-left{
-      padding-top: 10px;
-      margin-left: 100px;
-      margin-top: 150px;
-      margin-right: 10px;
-      border: white thick solid;
-      height: 70%;
-      display: grid;
-      font-size: 1.8em;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-areas:
-      "box1 box1 box1"
-      "box2 box2 box2"
-      "box3 box4 box5"
-      "box6 box7 box7" ;
-      button{
-        width: 100%;
-        height: 100%;
-
-      }
-      .top-box{
-        grid-area: box1;
-        font-family: 'Roboto', sans-serif;
-        font-size: 3.5rem;
-        text-align: center;
-        color: $blue-color;
-        background-color: rgba($color: #9e4141, $alpha: 0.6);
-        padding: 0 0.5em;
-        
-      }
-      .below-top-box{
-        grid-area: box2;
-        text-align: center;
-        color: $blue-color;
-        font-size: 0.7em;
-        background-color: rgba($color: #9e4141, $alpha: 0.6);
-        padding: 0 0.5em;
-        
-      }
-      .twitt-box{
-        grid-area: box3;
-        @include button-div(url(/images/twi.png));
-        border:darkgreen solid thick;
-        
-      }
-      .face-box{
-        margin: 20px;
-        padding: 0px 10px;
-        grid-area: box4;
-        background-color: white;
-        @include button-div(url(/images/facebk.png));
-        border:darkgreen solid thick;
-      }
-      .box5{
-        grid-area: box5;
-        @include button-div(url(/images/linkn.png));
-        border:darkgreen solid thick;
-      }
-      .box6{
-        grid-area: box6;
-        @include button-div(url(/images/grams.png));
-        border:darkgreen solid thick;
-      }
-      .box7{
-        grid-area: box7;
-        @include button-div(url(/images/sna.png));
-        border:darkgreen solid thick;
-      }
+  section{  
+    display: flex;
+    width: 80vw;
+    height: 70vh;
+    flex-direction: none;
+    article{
+      width: 50%;
+      height: 100%;
     }
-    .section-container-right{
+    .left-side-screen{
+      @include bordergrad()
+      border-image-source: linear-gradient(to left, green, white);
       display: flex;
       height: 100%;
-      width: 100%;
-      justify-content: right;
-      .picture-containers{
-        display: grid;
-        position: absolute;
-        width: 50%;
-        height: 70vh;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas:
-        ". box2"
-        "box1 box2"
-        "box3 box3"
-        ;
-
-        .right-box1{
-          grid-area: box1 ;
-          display: flexbox;
-          height: 200px;
-          background-color: rgb(251, 225, 190);
-          background: url(/images/leaf-book.jpg)no-repeat;
-          background-size: cover;
-          background-position: center;
-          border: solid white thick;
-          margin: 2px;
-        }
-        .right-box2{
-          grid-area: box2;
-          display: flexbox;
-          height: 89%;
-          background:url(/images/yasmin.png) rgb(28, 104, 44) no-repeat;
-          border: solid white thick;
-          background-size: contain;
-          background-position: center;
-          align-self: end;
-          margin: 2px;
-        }
-        .right-box3{
-          grid-area: box3;
-          display: flexbox;
-          height: 300px;
-          background-color: rgb(251, 225, 190);
-          background:url(/images/green-leaf.jpg)no-repeat;
-          background-size: cover;
-          border: solid white thick;
-          margin: 2px;
-
+      width: 50%;
+      flex-direction: column;
+      font-family: 'Montserrat', sans-serif;
+      .top-bottom{
+        text-align: center;
+        font-size: 2.3vw;
+        height:50% ;
+        width: 100%;
+        overflow: hidden;
+        .grid-container{
+          width: 100%;
+          height: 100%;
+          font-size: 1rem;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+          grid-template-areas: 
+          "box1 box2 box3"
+          "box4 box5 box6";
+          .box1-left{
+            @include bordergrad();
+            background:url(/images/twi.png)white no-repeat;
+            background-size: cover;
+            background-position: center;
+            grid-area: box1;
+          }
+          .box2-left{
+            @include bordergrad();
+            background:url(/images/facebk.png)white no-repeat;
+            background-position: center;
+            background-size: cover;
+            grid-area: box2;
+          }
+          .box3-left{
+            @include bordergrad();
+            background:url(/images/linkn.png)white no-repeat;
+            background-position: center;
+            background-size: cover;
+            grid-area: box3;
+          }
+          .box4-left{
+            @include bordergrad();
+            background:url(/images/grams.png)white no-repeat;
+            background-position: center;
+            background-size: cover;
+            grid-area: box4;
+            
+          }
+          .box5-left{
+            @include bordergrad();
+            background:url(/images/sna.png) white no-repeat;
+            background-position: center;
+            background-size: cover;
+            grid-area: box5;
+          }
+          .box6-left{
+            @include bordergrad();
+            background:url(/images/tubeu.png)white no-repeat;
+            background-position: center;
+            background-size: cover;
+            grid-area: box6;
+          }
         }
       }
-      .rightbox-container{
-        display: flexbox;
+    }
+    .right-side-screen{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: 
+      "box1 box2"
+      "box3 box3";
+      .centerbox-title{
+        display: flex;
+        height: 100%;
         width: 100%;
-        height: 80%;
-        
-
-        .right-backbox{
-          display: flexbox;
-          height: 100%;
-          width: 85%;
-          float: right;
-          background-color: #FBDA61;
-          background-image: linear-gradient(45deg,#057c0b 0% , rgb(251, 225, 190) 100%);
-          border:  3px solid white;
-          border-top: none;
-          opacity: 0.9;
+        text-align: center;
+        align-items: center;
+        transition: 3s;
+        h1{
+          display: none;
         }
+        &:hover{
+          transition: 2s;
+          background-color: rgba(214, 189, 78, 0.3);
+        }
+        &:hover h1{
+          display: block;
+          background-color: $black;
+          color: white;
+          width: 100%;
+        }
+      }
+      .box1-right-book{
+        grid-area: box1;
+        background: url(/images/leaf-book.jpg) no-repeat;
+        background-size: cover;
+        @include bordergrad()
+      }
+      .box2-right-yas{
+        grid-area: box2;
+        background: url(/images/yasmin.png)no-repeat;
+        background-size: contain;
+        @include bordergrad()
+        
+      }
+      .box3-right-photo{
+        grid-area: box3;
+        background: url(/images/green-leaf.jpg);
+        background-size: cover;
+        @include bordergrad()
       }
     }
   }

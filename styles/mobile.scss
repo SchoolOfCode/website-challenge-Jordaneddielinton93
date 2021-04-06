@@ -41,7 +41,12 @@
         background-color:rgb(224, 161, 79) ;
         align-items: center;
         cursor: pointer;
+        transition: 3s;
         z-index: 5;
+        &:hover{
+          transition: 3s;
+          transform: rotate(180deg);
+        }
         span{
           display: flexbox;
           width: 100%;
@@ -74,32 +79,37 @@
         display: none;
       }
     }
-
-  }
-  body{
-    background-image: url(/images/log.jpg);
-    background-size: cover;
-    background-position: center;
   }
   main{
-    height: 85%;
-    
-  section{
-    .section-container-left{
+    section{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       width: 100vw;
-      height: 100%;
-      margin: 0%;
-      border: none;
-      .top-box{
-        padding: 0px 10px;
+      height: 90vh;
+      .left-side-screen{
+        display: flexbox;
+        width: 95%;
+        .top-bottom{
+          font-size: 2.2vh;
+          .grid-container{
+            .box1-left,.box2-left,.box3-left,.box4-left,.box5-left,.box6-left{
+              background-size: contain;
+            }
+          }
+        }
+        .box1-right-book{
+
+        }
       }
-      .below-top-box{
-        padding: 0px 10px;
+      .right-side-screen{
+        width: 95%;
       }
     }
-    .section-container-right{
-      display: none;
+    #popup-menu{
+      width: 100%;
+      height: 50%;
+      
     }
-  }
   }
 }

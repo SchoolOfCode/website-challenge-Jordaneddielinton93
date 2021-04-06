@@ -100,8 +100,9 @@ main{
       height: 100%;
     }
     .left-side-screen{
-      @include bordergrad()
+      border:6px solid;
       border-image-source: linear-gradient(to left, green, white);
+      border-image-slice: 60 30;
       display: flex;
       height: 100%;
       width: 50%;

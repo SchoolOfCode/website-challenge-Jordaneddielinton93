@@ -117,11 +117,8 @@ main section article {
 
 main section .left-side-screen {
   border: 6px solid;
-  border-image-source: linear-gradient(to left, #101820FF, #F2AA4CFF);
-  border-image-slice: 60 30;
-  background-position: center;
-  margin: 2px;
   border-image-source: linear-gradient(to left, green, white);
+  border-image-slice: 60 30;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,12 +129,6 @@ main section .left-side-screen {
       -ms-flex-direction: column;
           flex-direction: column;
   font-family: 'Montserrat', sans-serif;
-}
-
-main section .left-side-screen:hover {
-  border-image-source: linear-gradient(to left, #F2AA4CFF, #101820FF);
-  -webkit-transform: translate(7px, -30px);
-          transform: translate(7px, -30px);
 }
 
 main section .left-side-screen .top-bottom {

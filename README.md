@@ -5,9 +5,11 @@
   - [x] *Restarted the hole site still using small amounts of reusuable code*
   - [x] it now work's even better the responsiveness works great
   - [x] Made the popup menu work on mobile's and made it appear from the bottom not the side.
+  - [x] figured how to add font awesome and i added ryan to the reviwers part of my github so they can check and leave a comment on the page. 
+  - [x]also helped put yasmin showing order specifity.
   
   --- 
-* Building this site was a handfull i create a site that i liked but then quicckly realised it was meant to be paired coding.
+* Building this site was a handfull i create a site that i liked but then quickly realised it was meant to be paired coding.
 * We all then got to gether and streamed our pages on discord and helped each other with what we wanted in each other site and how things should be built
   1. color schemes and styling of the site 
   2. the content within the site

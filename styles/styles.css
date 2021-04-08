@@ -171,7 +171,7 @@ main section .left-side-screen .top-bottom .grid-container:hover {
   opacity: 1;
 }
 
-main section .left-side-screen .top-bottom .grid-container .box1-left {
+main section .left-side-screen .top-bottom .grid-container .box1-twitter {
   border: 6px solid;
   border-image-source: linear-gradient(to left, #101820FF, #F2AA4CFF);
   border-image-slice: 60 30;
@@ -186,15 +186,15 @@ main section .left-side-screen .top-bottom .grid-container .box1-left {
   grid-area: box1;
 }
 
-main section .left-side-screen .top-bottom .grid-container .box1-left:hover {
+main section .left-side-screen .top-bottom .grid-container .box1-twitter:hover {
   border-image-source: linear-gradient(to left, #F2AA4CFF, #101820FF);
-  -webkit-transition: 2s;
-  transition: 2s;
-  -webkit-transform: translate(7px, -30px);
-          transform: translate(7px, -30px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translate(7px, -10px);
+          transform: translate(7px, -10px);
 }
 
-main section .left-side-screen .top-bottom .grid-container .box2-left {
+main section .left-side-screen .top-bottom .grid-container .box2-facebook {
   border: 6px solid;
   border-image-source: linear-gradient(to left, #101820FF, #F2AA4CFF);
   border-image-slice: 60 30;
@@ -208,12 +208,12 @@ main section .left-side-screen .top-bottom .grid-container .box2-left {
   grid-area: box2;
 }
 
-main section .left-side-screen .top-bottom .grid-container .box2-left:hover {
+main section .left-side-screen .top-bottom .grid-container .box2-facebook:hover {
   border-image-source: linear-gradient(to left, #F2AA4CFF, #101820FF);
-  -webkit-transition: 2s;
-  transition: 2s;
-  -webkit-transform: translate(7px, -30px);
-          transform: translate(7px, -30px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translate(7px, -10px);
+          transform: translate(7px, -10px);
 }
 
 main section .left-side-screen .top-bottom .grid-container .box3-left {
@@ -232,10 +232,10 @@ main section .left-side-screen .top-bottom .grid-container .box3-left {
 
 main section .left-side-screen .top-bottom .grid-container .box3-left:hover {
   border-image-source: linear-gradient(to left, #F2AA4CFF, #101820FF);
-  -webkit-transition: 2s;
-  transition: 2s;
-  -webkit-transform: translate(7px, -30px);
-          transform: translate(7px, -30px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translate(7px, -10px);
+          transform: translate(7px, -10px);
 }
 
 main section .left-side-screen .top-bottom .grid-container .box4-left {
@@ -254,10 +254,10 @@ main section .left-side-screen .top-bottom .grid-container .box4-left {
 
 main section .left-side-screen .top-bottom .grid-container .box4-left:hover {
   border-image-source: linear-gradient(to left, #F2AA4CFF, #101820FF);
-  -webkit-transition: 2s;
-  transition: 2s;
-  -webkit-transform: translate(7px, -30px);
-          transform: translate(7px, -30px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translate(7px, -10px);
+          transform: translate(7px, -10px);
 }
 
 main section .left-side-screen .top-bottom .grid-container .box5-left {
@@ -276,10 +276,10 @@ main section .left-side-screen .top-bottom .grid-container .box5-left {
 
 main section .left-side-screen .top-bottom .grid-container .box5-left:hover {
   border-image-source: linear-gradient(to left, #F2AA4CFF, #101820FF);
-  -webkit-transition: 2s;
-  transition: 2s;
-  -webkit-transform: translate(7px, -30px);
-          transform: translate(7px, -30px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translate(7px, -10px);
+          transform: translate(7px, -10px);
 }
 
 main section .left-side-screen .top-bottom .grid-container .box6-left {
@@ -298,10 +298,10 @@ main section .left-side-screen .top-bottom .grid-container .box6-left {
 
 main section .left-side-screen .top-bottom .grid-container .box6-left:hover {
   border-image-source: linear-gradient(to left, #F2AA4CFF, #101820FF);
-  -webkit-transition: 2s;
-  transition: 2s;
-  -webkit-transform: translate(7px, -30px);
-          transform: translate(7px, -30px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translate(7px, -10px);
+          transform: translate(7px, -10px);
 }
 
 main section .right-side-screen {
@@ -361,10 +361,10 @@ main section .right-side-screen .box1-right-book {
 
 main section .right-side-screen .box1-right-book:hover {
   border-image-source: linear-gradient(to left, #F2AA4CFF, #101820FF);
-  -webkit-transition: 2s;
-  transition: 2s;
-  -webkit-transform: translate(7px, -30px);
-          transform: translate(7px, -30px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translate(7px, -10px);
+          transform: translate(7px, -10px);
 }
 
 main section .right-side-screen .box2-right-yas {
@@ -382,10 +382,10 @@ main section .right-side-screen .box2-right-yas {
 
 main section .right-side-screen .box2-right-yas:hover {
   border-image-source: linear-gradient(to left, #F2AA4CFF, #101820FF);
-  -webkit-transition: 2s;
-  transition: 2s;
-  -webkit-transform: translate(7px, -30px);
-          transform: translate(7px, -30px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translate(7px, -10px);
+          transform: translate(7px, -10px);
 }
 
 main section .right-side-screen .box3-right-photo {
@@ -403,10 +403,10 @@ main section .right-side-screen .box3-right-photo {
 
 main section .right-side-screen .box3-right-photo:hover {
   border-image-source: linear-gradient(to left, #F2AA4CFF, #101820FF);
-  -webkit-transition: 2s;
-  transition: 2s;
-  -webkit-transform: translate(7px, -30px);
-          transform: translate(7px, -30px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translate(7px, -10px);
+          transform: translate(7px, -10px);
 }
 
 main #popup-menu {
@@ -518,10 +518,10 @@ main #popup-menu article .popup-grid-container .box1 {
 
 main #popup-menu article .popup-grid-container .box1:hover {
   border-image-source: linear-gradient(to left, #F2AA4CFF, #101820FF);
-  -webkit-transition: 2s;
-  transition: 2s;
-  -webkit-transform: translate(7px, -30px);
-          transform: translate(7px, -30px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translate(7px, -10px);
+          transform: translate(7px, -10px);
 }
 
 main #popup-menu article .popup-grid-container .box2 {
@@ -539,10 +539,10 @@ main #popup-menu article .popup-grid-container .box2 {
 
 main #popup-menu article .popup-grid-container .box2:hover {
   border-image-source: linear-gradient(to left, #F2AA4CFF, #101820FF);
-  -webkit-transition: 2s;
-  transition: 2s;
-  -webkit-transform: translate(7px, -30px);
-          transform: translate(7px, -30px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translate(7px, -10px);
+          transform: translate(7px, -10px);
 }
 
 main #popup-menu article .popup-grid-container .box3 {
@@ -560,10 +560,10 @@ main #popup-menu article .popup-grid-container .box3 {
 
 main #popup-menu article .popup-grid-container .box3:hover {
   border-image-source: linear-gradient(to left, #F2AA4CFF, #101820FF);
-  -webkit-transition: 2s;
-  transition: 2s;
-  -webkit-transform: translate(7px, -30px);
-          transform: translate(7px, -30px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translate(7px, -10px);
+          transform: translate(7px, -10px);
 }
 
 main #popup-menu #books {

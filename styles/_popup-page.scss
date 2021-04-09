@@ -61,6 +61,35 @@ main{
     color: white;
     line-height: 40px;
     padding: 8px;
+
+    .popup-grid-container-photos{
+      height: 70vh;
+      display: grid;
+      grid-template-columns:1fr 1fr ;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: 
+      "box1 box2"
+      "box1 box3";
+      .box1{
+        grid-area:box1 ;
+        @include bordergrad;
+        background: url(/images/long-cam.jpg)no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      .box2{
+        grid-area: box2;
+        @include bordergrad;
+        background-image: url(/images/deskcam.jpeg);
+        background-size: cover;
+      }
+      .box3{
+        grid-area: box3;
+        @include bordergrad;
+        background-image: url(/images/shadow.jpg);
+        background-size: contain;
+      }
+    }
     .popup-grid-container{
       height: 70vh;
       display: grid;
@@ -72,22 +101,24 @@ main{
       .box1{
         grid-area:box1 ;
         @include bordergrad;
-        background-image: url(/images/onaLisa.jpg);
-        background-size: contain;
+        background: url(/images/computer.jpg)no-repeat;
+        background-size: cover;
+        background-position: center;
       }
       .box2{
         grid-area: box2;
         @include bordergrad;
-        background-image: url(/images/onaLisa.jpg);
-        background-size: contain;
+        background-image: url(/images/orangebook.jpg);
+        background-size: cover;
       }
       .box3{
         grid-area: box3;
         @include bordergrad;
-        background-image: url(/images/onaLisa.jpg);
+        background-image: url(/images/hike.jpg);
         background-size: contain;
       }
     }
+    
   }
   #books{
     display: none;

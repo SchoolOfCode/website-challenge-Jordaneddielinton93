@@ -1,21 +1,35 @@
-# Website Challenge
-
-## Overview
-
-For your first project on the bootcamp, we want you to make a website all about your pair partner using HTML and CSS.
-
-The person you are making your website for is your partner, aka The Client. It is your job as a programmer to understand what the client wants from a profile site, assess what information is available and useful, design what serves the audience of users (aka the other bootcampers) best from the experience, and then create something which best solves those needs. You won't be given any guidance of what to build - you'll need to empathise with your users to see what they would find useful (or even survey and talk to them), and plan your site accordingly.
-
-## Outcome
-
-- a single web page created with HTML and CSS
-- a profile describing your client
-- a short 1-page README.md file alongside it which describes how you went about the project (your thoughts, research, plans, and justification for decisions)
-
-## Extra
-
-This is not only a chance for you to practice the core skills of HTML and CSS, but also a chance to invest time in thinking about how to build a website for a client, and have a user-centric approach - a key learning objective of the course. You will need to actively communicate with the client to find out everything you need in order to design and build a website which represents them to the rest of the cohort.
-
-Although you will each have an individual repository in which to make the website, there is nothing stopping you pair programming with your partner on the project. Organise your time so that you can spend an equal amount of time on each project. For example, if you spend three hours coding together on Sunday, you would spend 1.5 hours pair programming on one site, before moving over to the other site.
-
-This project will span the first two weeks of the bootcamp, and you will be given time in live evening sessions to work on it as well.
+# MY LEARNING PROGRESS  
+  ---  
+  ## last update
+  - [x] *Made the site live*
+  - [x] *Restarted the hole site still using small amounts of reusuable code*
+  - [x] it now work's even better the responsiveness works great
+  - [x] Made the popup menu work on mobile's and made it appear from the bottom not the side.
+  - [x] figured how to add font awesome and i added ryan to the reviwers part of my github so they can check and leave a comment on the page. 
+  - [x]also helped put yasmin showing order specifity.
+  
+  --- 
+* Building this site was a handfull i create a site that i liked but then quickly realised it was meant to be paired coding.
+* We all then got to gether and streamed our pages on discord and helped each other with what we wanted in each other site and how things should be built
+  1. color schemes and styling of the site 
+  2. the content within the site
+  3. we gave our own flare to the site i.e grid/flexbox/tables/bootstrap/scss
+  ---
+---
+## CONCEPTS LEARNT:
+* Quickly adapting to new enviroments 
+* learning new skills such as MarkDown and why it's used
+* helping other and understanding there code aswell as them understanding mine to work around bugs
+* i personal learnt sass on top and realised it's power also about colour marking your brackets to help find which one you you need to be in.
+* html/css is fun i have a lot of practise in this area, such as flex box. But i did not know grid at all but now i do and its structure i love it this course has really improved my coding skills
+* GIT aka the bane of my existence!!!  
+    1. this is used for pushing to githubs site
+    2. you begin with a git init
+    3. you add . or add index.html  (adding all files or just one)
+    4. then you commit with a good message to show your changes.
+    5. get the github repo link from the repo you created on github or someone else's github 
+    6. git push "link" 
+    7. **_STILL NEED HELP USING BRANCHES_** 
+----
+### list of things im learning on this project
+* you can make graidents from two different colors

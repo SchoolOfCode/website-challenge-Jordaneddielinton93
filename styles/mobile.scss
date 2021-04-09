@@ -1,0 +1,116 @@
+
+@media only screen and (max-width: 600px) {
+  #mobile-menu-container{
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 90vh;
+    background-color:rgb(224, 161, 79);
+    align-items: center;
+    z-index: 3;
+    ol{
+      display: flexbox;
+      width:100vw;
+      height: 200px;
+      li{
+        text-align: center;
+        margin: 20px 0px;
+        padding: 20px 0px;
+        width: 100%;
+        background-color: white;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      }
+
+    }
+  }
+  header{
+    nav{
+      p{
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+      justify-content: center;
+      .mobile-burgerbar-container{
+        display: flex;
+        position: absolute;
+        left: 10px;
+        width: 40px;
+        height: 40px;
+        border: white thin solid;
+        background-color:rgb(224, 161, 79) ;
+        align-items: center;
+        cursor: pointer;
+        transition: 3s;
+        z-index: 5;
+        &:hover{
+          transition: 3s;
+          transform: rotate(180deg);
+        }
+        span{
+          display: flexbox;
+          width: 100%;
+          height: 3px;
+          background-color: honeydew;
+          &::before{
+            content: "";
+            position: absolute;
+            top: 10px;
+            display: flexbox;
+            width: 100%;
+            height: 3px;
+            background-color: white;
+          }
+          &::after{
+            content: "";
+            position: absolute;
+            bottom: 10px;
+            display: flexbox;
+            width: 100%;
+            height: 3px;
+            background-color: white;
+          }
+        }
+      }
+      p{
+        margin: 0%;
+      }
+      ul{
+        display: none;
+      }
+    }
+  }
+  main{
+    section{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 90vh;
+      .left-side-screen{
+        display: flexbox;
+        width: 80%;
+        .top-bottom{
+          font-size: 2.2vh;
+          .grid-container{
+            .box1-left,.box2-left,.box3-left,.box4-left,.box5-left,.box6-left{
+              background-size: contain;
+            }
+          }
+        }
+        .box1-right-book{
+
+        }
+      }
+      .right-side-screen{
+        width: 95%;
+      }
+    }
+    #popup-menu{
+      width: 100%;
+      height: 100%;
+      top:0;
+      
+    }
+  }
+}

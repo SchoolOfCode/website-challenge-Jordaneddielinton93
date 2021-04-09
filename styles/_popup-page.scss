@@ -1,0 +1,163 @@
+main{
+  #popup-menu{
+    display: none;
+    position: absolute;
+    right: 0;
+    height: 90vh;
+    width: 50vw;
+    position: absolute;
+    background: radial-gradient(#e0a14f ,$black);
+    background-size: cover;
+    border-left: solid thick white;
+    z-index: 10;
+    transition: width 3s;
+    
+    menu{
+      display: flex;
+      width: 100%;
+      height: 40px;
+      justify-content: right;
+      .x-container{
+        display: flex;
+        position: absolute;
+        top: 0px;
+        right: 30px;
+        width: 40px;
+        height: 40px;
+        background-color: #e0a14f;
+        align-items: center;
+        cursor: pointer;
+        transition: 3s;
+        &:hover{
+          transform: rotate(900deg);
+          border-radius: 40px;
+          transition: 3s;
+          
+        }
+        
+        .x-lines{
+          display: flexbox;
+          width: 100%;
+          height: 6px;
+          background-color: rgb(2, 2, 1);
+          transform: rotate(45deg);
+          &::before{
+            position: absolute;
+            display: flexbox;
+            content: "";
+            transform: rotate(90deg);
+            background-color: green;
+            width: 100%;
+          height: 6px;
+          }
+        }
+      }
+    }
+  article{
+    text-align: center;
+    background-color:radial-gradient($black,$orange); ;
+    height: 80vh;
+    overflow: hidden;
+    color: white;
+    line-height: 40px;
+    padding: 8px;
+
+    .popup-grid-container-photos{
+      height: 70vh;
+      display: grid;
+      grid-template-columns:1fr 1fr ;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: 
+      "box1 box2"
+      "box1 box3";
+      .box1{
+        grid-area:box1 ;
+        @include bordergrad;
+        background: url(/images/long-cam.jpg)no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      .box2{
+        grid-area: box2;
+        @include bordergrad;
+        background-image: url(/images/deskcam.jpeg);
+        background-size: cover;
+      }
+      .box3{
+        grid-area: box3;
+        @include bordergrad;
+        background-image: url(/images/shadow.jpg);
+        background-size: contain;
+      }
+    }
+    .popup-grid-container{
+      height: 70vh;
+      display: grid;
+      grid-template-columns:1fr 1fr ;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: 
+      "box1 box2"
+      "box1 box3";
+      .box1{
+        grid-area:box1 ;
+        @include bordergrad;
+        background: url(/images/computer.jpg)no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      .box2{
+        grid-area: box2;
+        @include bordergrad;
+        background-image: url(/images/orangebook.jpg);
+        background-size: cover;
+      }
+      .box3{
+        grid-area: box3;
+        @include bordergrad;
+        background-image: url(/images/hike.jpg);
+        background-size: contain;
+      }
+    }
+    
+  }
+  #books{
+    display: none;
+  }
+  #photos{
+    display: none;
+  }
+  #aboutyas{
+    display: none;
+    
+  }
+  }
+}
+.centre-box-title{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  
+  h2{
+    display: flexbox;
+    font-size: 0%;
+    
+  }
+  &:hover{
+    display: flex;
+    background-color: #e0a14f;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 1s;
+    h2{
+      display: flexbox;
+      text-align: center;
+      font-size: 1.5em;
+      background-color: lightslategrey;
+      width: 100%;
+      color: white;
+      
+    }
+  }
+}

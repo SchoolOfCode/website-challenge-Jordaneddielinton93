@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/mobile.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/8a4d4148a1.js" crossorigin="anonymous"></script>
+  <title>Yasmina Mayeh</title>
+</head>
+<body>
+  <div class="page-container">
+    
+
+    <!-- HEADER -->
+    <header>
+      <nav>
+
+        <div class="mobile-burgerbar-container" onclick="mobileMenu()">
+          <span></span>
+        </div>
+
+        <p><span class="Yasmin-logo">YASMIN</span><span class="Mayeh-logo"> Mayeh</span></p>
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="">SETTING</a></li>
+          <li><a href="">STORE</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- HEADER -->
+
+    <!-- THIS IS A MOBILE MENU -->
+    <div id="mobile-menu-container" >
+      <ol>
+        <li>About Yas</li>
+        <li>Photos</li>
+        <li>Books</li>
+      </ol>
+    </div>
+    <!-- THIS IS A MOBILE MENU -->
+
+    
+    <main>
+      <!-- THIS IS A POPUP MENU -->
+      <div class="pop-up-menu" id="popup-menu">
+        <menu>
+          <div class="x-container" onclick="closemenu()">
+            <div class="x-lines"></div>
+          </div>
+        </menu>
+        <article id="books">
+          <h1>My Favourite books</h1>
+          <p> <br> I like reading books non fiction mostly, but i also enjoy a bit of fiction here and there. My current read at the moment is ‘The little by Hanya Yanagihara’
+            Here are a couple books  on my to read list that i can share: The unexpected and The Bee Keeper of Allepo 
+          </p>
+        </article>
+
+        <article id="photos">
+          <div class="top-bottom">
+          <h1>Why i love photography</h1>
+          <p><blockquote>“I love how you can capture moments and reminisce about them even though it just happened.”</blockquote></p>
+          </div>
+          <div class="top-bottom">
+            <div class="popup-grid-container-photos">
+              <div class="box1"></div>
+              <div class="box2"></div>
+              <div class="box3"></div>
+
+            </div>
+          </div>
+        </article>
+
+        <article id="aboutyas">
+          <div class="top-bottom">
+          <h1>its all about me me me!</h1>
+          <p>hey im yass, im a very busy hardworking individual very fast at learning and wise at picking new concepts up. Interest are photography, hiking, reading don’t really have a favourite colour but earthy tones neutral colours are my thing hense the colour scheme of this site</p>
+        </div>
+          <div class="top-bottom">
+            <div class="popup-grid-container">
+              <div class="box1"></div>
+              <div class="box2"></div>
+              <div class="box3"></div>
+
+            </div>
+          </div>
+        </article>
+      </div>
+      <!-- THIS IS A POPUP MENU -->
+
+      <!--  -->
+      <section>
+        <!-- left side of the screen -->
+        <article class="left-side-screen">
+         <div class="top-bottom">
+           <h1>This is a page about <br><i class="fas fa-biohazard" style="color: red;"></i> Yasmin Mayeh <i class="fas fa-biohazard" style="color: red;"></i>  </h1>
+           <p>list of site's that you can contact Yasmin at below</p>
+         </div>
+         <div class="top-bottom">
+           <div class="grid-container">
+             <div class="box1-twitter"></div>
+             <div class="box2-facebook"></div>
+             <div class="box3-left"></div>
+             <div class="box4-left"></div>
+             <div class="box5-left"></div>
+             <div class="box6-left"></div>
+           </div>
+         </div>
+        </article>
+
+        <!-- rightside of the screen -->
+        <article class="right-side-screen">
+          <div class="box1-right-book" onclick="menu('books')">
+            <div class="centerbox-title"><h1>I LOVE BOOKS</h1></div>
+          </div>
+          <div class="box2-right-yas" onclick="menu('aboutyas')">
+            <div class="centerbox-title"><h1>Hey its Yas</h1></div>
+          </div>
+          <div class="box3-right-photo" onclick="menu('photos')">
+            <div class="centerbox-title"><h1>My photography</h1></div>
+            
+          </div>
+        </article>
+      </section>
+
+    </main>
+  </div>
+  <script src="/slider-menu.js"></script>
+</body>
+</html>
